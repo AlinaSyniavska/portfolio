@@ -11,8 +11,6 @@ interface IProps {
 const ProfileName: FC<IProps> = ({person}) => {
     const {personName, personPosition} = person;
 
-    console.log(person);
-
     return (
         <React.Fragment>
             <div className={style.profileNameContainer}>

@@ -14,7 +14,6 @@ body {
 
 .profile {
     width: 1200px;
-    display: flex;
-    /*background: #6B9999;*/
+    position: relative;
 }
 

@@ -1,0 +1,13 @@
+.ProfileCommonInfoContainer {
+    background: #6B9999;
+    width: 350px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 100px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+}

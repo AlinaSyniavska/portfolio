@@ -1,7 +1,7 @@
-import {FC} from "react";
+import React, {FC} from "react";
 
 import style from './ProfilePage.module.css';
-import {ProfileName} from "../../components";
+import {ProfileCommonInfo, ProfileName, ProfilePhoto} from "../../components";
 
 const ProfilePage: FC = () => {
     return (
@@ -14,6 +14,9 @@ const ProfilePage: FC = () => {
                     }}
                 />
 
+                <ProfileCommonInfo>
+                    <ProfilePhoto/>
+                </ProfileCommonInfo>
 
 
 
