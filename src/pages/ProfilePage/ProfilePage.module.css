@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapPage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.profile {
+    width: 1024px;
+    display: flex;
+    /*background: #6B9999;*/
+    /*background: #EBC9BB;*/
+    /*background: #222;*/
+}
+
