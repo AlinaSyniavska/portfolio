@@ -1,21 +1,21 @@
 import React from "react";
 import {FC} from "react";
 
-import style from './ProfilePhoto.module.css';
+import style from './ProfileName.module.css';
 import {IPerson} from "../../interfaces";
 
 interface IProps {
     person: Partial<IPerson>,
 }
 
-const ProfilePhoto: FC<IProps> = ({person}) => {
+const ProfileName: FC<IProps> = ({person}) => {
     const {personName, personPosition} = person;
 
     console.log(person);
 
     return (
         <React.Fragment>
-            <div className={style.photoBackOne}>
+            <div className={style.profileNameContainer}>
                 <h1>{personName}</h1>
                 <p>{personPosition}</p>
             </div>
@@ -23,4 +23,4 @@ const ProfilePhoto: FC<IProps> = ({person}) => {
     );
 };
 
-export {ProfilePhoto};
+export {ProfileName};

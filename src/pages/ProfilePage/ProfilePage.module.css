@@ -9,13 +9,12 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'Lato', sans-serif;
+    color: #222;
 }
 
 .profile {
-    width: 1024px;
+    width: 1200px;
     display: flex;
     /*background: #6B9999;*/
-    /*background: #EBC9BB;*/
-    /*background: #222;*/
 }
 

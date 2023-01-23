@@ -1,2 +1,2 @@
-export * from './ProfilePhoto/ProfilePhoto';
+export * from './ProfileName/ProfileName';
 
