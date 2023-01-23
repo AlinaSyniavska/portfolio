@@ -19,6 +19,9 @@ body {
 
 .profileInfoContainer {
     padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
 }
 
 .profileTitle {
@@ -30,7 +33,7 @@ body {
 }
 
 .profileText {
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: .1rem;
 }
 

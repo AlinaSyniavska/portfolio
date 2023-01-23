@@ -1,12 +1,12 @@
 .profileCommonInfoContainer {
     background: #6B9999;
     width: 350px;
-    height: 100vh;
+    height: 100vmax;
     position: absolute;
     top: 0;
     left: 100px;
 
     display: flex;
     flex-direction: column;
-    row-gap: 50px;
+    row-gap: 100px;
 }
