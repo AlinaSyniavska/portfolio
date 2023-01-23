@@ -1,4 +1,4 @@
-.ProfileCommonInfoContainer {
+.profileCommonInfoContainer {
     background: #6B9999;
     width: 350px;
     height: 100vh;
@@ -9,5 +9,4 @@
     display: flex;
     flex-direction: column;
     row-gap: 50px;
-    align-items: center;
 }

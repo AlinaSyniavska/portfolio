@@ -17,3 +17,28 @@ body {
     position: relative;
 }
 
+.profileInfoContainer {
+    padding: 0 50px;
+}
+
+.profileTitle {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin-bottom: 25px;
+}
+
+.profileText {
+    font-size: 18px;
+    letter-spacing: .1rem;
+}
+
+.whiteText {
+    color: white;
+}
+
+.blackText {
+    color: #222;
+}
+

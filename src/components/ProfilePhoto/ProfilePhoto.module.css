@@ -1,7 +1,7 @@
 .profilePhotoContainer {
     margin-top: 100px;
     width: 300px;
-    object-fit: contain;
+    align-self: center;
 }
 
 .profilePhotoContainer > img {

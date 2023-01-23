@@ -10,7 +10,7 @@ interface IProps {
 const ProfileCommonInfo: FC<IProps> = ({children}) => {
     return (
         <React.Fragment>
-            <div className={style.ProfileCommonInfoContainer}>
+            <div className={style.profileCommonInfoContainer}>
                 {children}
             </div>
         </React.Fragment>

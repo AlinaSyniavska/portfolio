@@ -1,7 +1,7 @@
 import React, {FC} from "react";
 
 import style from './ProfilePage.module.css';
-import {ProfileCommonInfo, ProfileName, ProfilePhoto} from "../../components";
+import {ProfileCommonInfo, ProfileIntro, ProfileName, ProfilePhoto} from "../../components";
 
 const ProfilePage: FC = () => {
     return (
@@ -16,9 +16,11 @@ const ProfilePage: FC = () => {
 
                 <ProfileCommonInfo>
                     <ProfilePhoto/>
+                    <div className={style.profileInfoContainer}>
+                        <ProfileIntro/>
+
+                    </div>
                 </ProfileCommonInfo>
-
-
 
 
             </div>
