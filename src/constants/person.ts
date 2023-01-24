@@ -7,6 +7,8 @@ const person = {
     socialLinks: {
         github: 'https://github.com/AlinaSyniavska',
         linkedin: 'https://linkedin.com/in/alina-syniavska-a77048249',
+        facebook: '',
+        telegram: '',
     },
     education: [
         {
