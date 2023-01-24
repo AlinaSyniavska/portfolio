@@ -12,6 +12,7 @@ import {
 import {IPerson, ISocial} from "../../interfaces";
 import {SocialWebLink} from "../SocialWebLink/SocialWebLink";
 import style from '../../pages/ProfilePage/ProfilePage.module.css';
+import {SocialLink} from "../SocialLink/SocialLink";
 
 interface IProps {
     contacts: Partial<IPerson>,
@@ -25,9 +26,9 @@ const ProfileContact: FC<IProps> = ({contacts}) => {
         <div>
             <div className={`${style.profileTitle} ${style.whiteText}`}>Contact me</div>
             <div className={`${style.profileText} ${style.whiteText} ${style.profileContactContainer}`}>
-                <SocialWebLink link={phone} icon={faPhone} title={'phone'}/>
-                <SocialWebLink link={city} icon={faLocationDot} title={'city'}/>
-                <SocialWebLink link={email} icon={faSquareEnvelope} title={'email'}/>
+                <SocialLink link={phone} icon={faPhone} title={'phone'}/>
+                <SocialLink link={city} icon={faLocationDot} title={'city'}/>
+                <SocialLink link={email} icon={faSquareEnvelope} title={'email'}/>
                 <SocialWebLink link={github} icon={faGithub} title={'github'}/>
                 <SocialWebLink link={linkedin} icon={faLinkedin} title={'linkedin'}/>
             </div>
