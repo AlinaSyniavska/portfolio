@@ -1,5 +1,4 @@
-import {FC} from "react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import React, {FC} from "react";
 import {
     faPhone,
     faLocationDot,
@@ -10,21 +9,30 @@ import {
     faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
-import {IPerson} from "../../interfaces";
+import {IPerson, ISocial} from "../../interfaces";
+import {SocialWebLink} from "../SocialWebLink/SocialWebLink";
+import style from '../../pages/ProfilePage/ProfilePage.module.css';
 
 interface IProps {
     contacts: Partial<IPerson>,
 }
 
 const ProfileContact: FC<IProps> = ({contacts}) => {
+    const {phone, city, email, socialLinks} = contacts;
+    const {github, linkedin} = socialLinks as ISocial;
+
     return (
         <div>
-            <FontAwesomeIcon icon={faPhone} title={'Edit'}/>
-            <FontAwesomeIcon icon={faLocationDot} title={'Edit'}/>
-            <FontAwesomeIcon icon={faSquareEnvelope} title={'Edit'}/>
-            <FontAwesomeIcon icon={faGithub} title={'Edit'}/>
-            <FontAwesomeIcon icon={faLinkedin} title={'Edit'}/>
+            <div className={`${style.profileTitle} ${style.whiteText}`}>Contact me</div>
+            <div className={`${style.profileText} ${style.whiteText} ${style.profileContactContainer}`}>
+                <SocialWebLink link={phone} icon={faPhone} title={'phone'}/>
+                <SocialWebLink link={city} icon={faLocationDot} title={'city'}/>
+                <SocialWebLink link={email} icon={faSquareEnvelope} title={'email'}/>
+                <SocialWebLink link={github} icon={faGithub} title={'github'}/>
+                <SocialWebLink link={linkedin} icon={faLinkedin} title={'linkedin'}/>
+            </div>
         </div>
+
     );
 };
 

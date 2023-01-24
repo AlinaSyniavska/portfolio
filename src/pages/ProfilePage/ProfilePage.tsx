@@ -24,8 +24,8 @@ const ProfilePage: FC = () => {
                                 city: 'Zaporizhzhya, Ukraine',
                                 email: 'alina22syniavska@gmail.com',
                                 socialLinks: {
-                                    github: 'github.com/AlinaSyniavska',
-                                    linkedin: 'linkedin.com/in/alina-syniavska-a77048249',
+                                    github: 'https://github.com/AlinaSyniavska',
+                                    linkedin: 'https://linkedin.com/in/alina-syniavska-a77048249',
                                 }
                             }}
                         />
