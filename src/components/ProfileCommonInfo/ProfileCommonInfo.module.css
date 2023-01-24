@@ -1,7 +1,7 @@
 .profileCommonInfoContainer {
     background: rgba(107, 153, 153);
     width: 350px;
-    height: 100vmax;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 100px;
