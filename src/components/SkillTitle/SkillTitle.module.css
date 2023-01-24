@@ -1,0 +1,19 @@
+.skillTitleContainer {
+    display: flex;
+    column-gap: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: .2rem;
+    margin-bottom: 20px;
+}
+
+.skillTitleContainer > i {
+    color: rgb(107, 153, 153);
+}
+
+.skillTitle {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+

@@ -1,0 +1,20 @@
+.profileSkillsInfoContainer {
+    padding: 100px 20px 20px 45%;
+}
+
+.skillContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    font-size: 20px;
+}
+
+.skillUnit {
+    margin-bottom: 25px;
+}
+
+.skillTitle {
+    font-weight: bold;
+}
+
+

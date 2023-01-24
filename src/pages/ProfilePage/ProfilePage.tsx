@@ -1,7 +1,14 @@
 import React, {FC} from "react";
 
 import style from './ProfilePage.module.css';
-import {ProfileCommonInfo, ProfileContact, ProfileIntro, ProfileName, ProfilePhoto} from "../../components";
+import {
+    ProfileCommonInfo,
+    ProfileContact,
+    ProfileIntro,
+    ProfileName,
+    ProfilePhoto,
+    ProfileSkillsInfo
+} from "../../components";
 import {person} from "../../constants";
 
 const ProfilePage: FC = () => {
@@ -14,10 +21,11 @@ const ProfilePage: FC = () => {
                     <ProfilePhoto/>
                     <div className={style.profileInfoContainer}>
                         <ProfileIntro/>
-                        <ProfileContact contacts={person}/>
+                        <ProfileContact person={person}/>
                     </div>
                 </ProfileCommonInfo>
 
+                <ProfileSkillsInfo person={person}/>
 
             </div>
         </div>

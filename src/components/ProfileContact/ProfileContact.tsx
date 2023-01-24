@@ -15,11 +15,11 @@ import style from '../../pages/ProfilePage/ProfilePage.module.css';
 import {SocialLink} from "../SocialLink/SocialLink";
 
 interface IProps {
-    contacts: Partial<IPerson>,
+    person: Partial<IPerson>,
 }
 
-const ProfileContact: FC<IProps> = ({contacts}) => {
-    const {phone, city, email, socialLinks} = contacts;
+const ProfileContact: FC<IProps> = ({person}) => {
+    const {phone, city, email, socialLinks} = person;
     const {github, linkedin} = socialLinks as ISocial;
 
     return (
