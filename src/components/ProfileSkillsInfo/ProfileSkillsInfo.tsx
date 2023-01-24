@@ -4,6 +4,7 @@ import {FC} from "react";
 import style from './ProfileSkillsInfo.module.css';
 import {SkillTitle} from "../SkillTitle/SkillTitle";
 import {IPerson} from "../../interfaces";
+import {Link} from "react-router-dom";
 
 interface IProps {
     person: Partial<IPerson>,
@@ -16,6 +17,13 @@ const ProfileSkillsInfo: FC<IProps> = ({person}) => {
         <React.Fragment>
             <div className={style.profileSkillsInfoContainer}>
                 <div className={style.skillContainer}>
+                    <div>
+                        <SkillTitle title={'pet projects'}/>
+                        <button className={style.btnProjectsLink}>
+                            <Link to={'/projects'} style={{textDecoration: 'none', color: '#222'}}>Go to Projects</Link>
+                        </button>
+                    </div>
+
                     <div>
                         <SkillTitle title={'education'}/>
                         {

@@ -9,6 +9,22 @@
     font-size: 20px;
 }
 
+.btnProjectsLink {
+    width: 200px;
+    box-sizing: border-box;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background: rgb(107, 153, 153);
+    color: white;
+    font-size: 20px;
+}
+
+.btnProjectsLink:hover {
+    font-weight: bold;
+    background: rgba(107, 153, 153, 60%);
+}
+
 .skillUnit {
     margin-bottom: 25px;
 }
