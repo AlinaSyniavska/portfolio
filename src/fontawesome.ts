@@ -1,9 +1,8 @@
-// import the library
+
 import { library } from '@fortawesome/fontawesome-svg-core';
 
-// import your icons
 import {faPhone, faLocationDot, faSquareEnvelope, faChevronRight} from "@fortawesome/free-solid-svg-icons";
-import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import {faGithub, faLinkedin, faFacebook, faTelegram} from "@fortawesome/free-brands-svg-icons";
 
 library.add(
     faPhone,
@@ -11,5 +10,8 @@ library.add(
     faSquareEnvelope,
     faGithub,
     faLinkedin,
-    faChevronRight
+    faChevronRight,
+    faFacebook,
+    faTelegram
 );
+
