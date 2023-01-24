@@ -7,6 +7,8 @@ import {
 import {
     faGithub,
     faLinkedin,
+    faFacebook,
+    faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
 
 import {IPerson, ISocial} from "../../interfaces";
@@ -20,20 +22,35 @@ interface IProps {
 
 const ProfileContact: FC<IProps> = ({person}) => {
     const {phone, city, email, socialLinks} = person;
-    const {github, linkedin} = socialLinks as ISocial;
+    const {github, linkedin, facebook, telegram} = socialLinks as ISocial;
 
     return (
         <div>
             <div className={`${style.profileTitle} ${style.whiteText}`}>Contact me</div>
             <div className={`${style.profileText} ${style.whiteText} ${style.profileContactContainer}`}>
-                <SocialLink link={phone} icon={faPhone} title={'phone'}/>
-                <SocialLink link={city} icon={faLocationDot} title={'city'}/>
-                <SocialLink link={email} icon={faSquareEnvelope} title={'email'}/>
-                <SocialWebLink link={github} icon={faGithub} title={'github'}/>
-                <SocialWebLink link={linkedin} icon={faLinkedin} title={'linkedin'}/>
+                {
+                    phone && <SocialLink link={phone} icon={faPhone} title={'phone'}/>
+                }
+                {
+                    city && <SocialLink link={city} icon={faLocationDot} title={'city'}/>
+                }
+                {
+                    email && <SocialLink link={email} icon={faSquareEnvelope} title={'email'}/>
+                }
+                {
+                    github && <SocialWebLink link={github} icon={faGithub} title={'github'}/>
+                }
+                {
+                    linkedin && <SocialWebLink link={linkedin} icon={faLinkedin} title={'linkedin'}/>
+                }
+                {
+                    facebook && <SocialWebLink link={facebook} icon={faFacebook} title={'facebook'}/>
+                }
+                {
+                    telegram && <SocialWebLink link={telegram} icon={faTelegram} title={'telegram'}/>
+                }
             </div>
         </div>
-
     );
 };
 
