@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background: rgba(107, 153, 153, 30%);
 }
 
 .wrapPage {

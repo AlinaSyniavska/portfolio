@@ -1,4 +1,6 @@
 import {ISocial} from "./social.interface";
+import {IEducation} from "./education.interface";
+import {ILanguage} from "./language.interface";
 
 export interface IPerson {
     personName: string,
@@ -6,5 +8,8 @@ export interface IPerson {
     phone: string,
     city: string,
     email: string,
-    socialLinks: ISocial
+    socialLinks: ISocial,
+    education: IEducation[],
+    languages: ILanguage[],
+    skills: string[],
 }
