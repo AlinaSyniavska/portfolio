@@ -87,10 +87,10 @@ const myProjects = [
             'Simply create a JS variable which stores the data and prepopulate it with 7 notes so that they are shown when the page is reloaded.\n\n',
         stack: ['React', 'TypeScript', 'Tailwindcss'],
         links: {
-            front: 'https://github.com/AlinaSyniavska/radency-note_app-react_redux',
+            front: 'https://github.com/AlinaSyniavska/simple-note-app',
             back: '',
             image: 'src/media/note-app.png',
-            website: '',
+            website: 'https://simple-note-application.netlify.app',
             video: '',
         },
     },
