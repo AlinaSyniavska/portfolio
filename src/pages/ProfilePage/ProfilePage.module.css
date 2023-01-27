@@ -53,3 +53,8 @@ body {
     color: #222;
 }
 
+.linkContainer {
+    display: flex;
+    column-gap: 50px;
+}
+
