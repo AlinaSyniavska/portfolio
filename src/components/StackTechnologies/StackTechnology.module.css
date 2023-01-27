@@ -1,0 +1,16 @@
+.stackTechnologiesContainer {
+    box-sizing: border-box;
+    display: flex;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.technology {
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border: 2px solid rgb(107, 153, 153);
+    border-radius: 5px;
+}
+
+

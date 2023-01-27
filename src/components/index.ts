@@ -10,4 +10,5 @@ export * from './SingleProject/SingleProject';
 export * from './SkillTitle/SkillTitle';
 export * from './SocialLink/SocialLink';
 export * from './SocialWebLink/SocialWebLink';
+export * from './StackTechnologies/StackTechnologies';
 

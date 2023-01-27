@@ -3,6 +3,7 @@ import {FC} from "react";
 
 import {IProject} from "../../interfaces";
 import style from './SingleProject.module.css';
+import {StackTechnologies} from "../StackTechnologies/StackTechnologies";
 
 interface IProps {
     project: IProject,
@@ -21,11 +22,9 @@ const SingleProject: FC<IProps> = ({project}) => {
                 </div>
 
                 <div className={style.singleProjectInfo}>
-                    <p>{stack}</p>
+                    <StackTechnologies stack={stack}/>
                     <h2>{title}</h2>
                 </div>
-
-
             </div>
         </React.Fragment>
     );
