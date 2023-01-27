@@ -10,7 +10,7 @@ const myProjects = [
         links: {
             front: 'https://github.com/AlinaSyniavska/makeup-shop-fe',
             back: 'https://github.com/AlinaSyniavska/makeup-shop',
-            image: 'src/media/makeup-shop.png',
+            image: 'makeup-shop.png',
             website: '',
             video: 'https://www.loom.com/share/aaeeb59abc644f93ad0b8c813038db7a',
         },
@@ -35,7 +35,7 @@ const myProjects = [
         links: {
             front: 'https://github.com/AlinaSyniavska/codebridge-articles-test',
             back: '',
-            image: 'src/media/space-articles.png',
+            image: 'space-articles.png',
             website: 'https://space-articles.netlify.app',
             video: '',
         },
@@ -50,7 +50,7 @@ const myProjects = [
         links: {
             front: 'https://github.com/AlinaSyniavska/ngMoviesApp',
             back: '',
-            image: 'src/media/movies-app.png',
+            image: 'movies-app.png',
             website: '',
             video: 'https://www.loom.com/share/64af6aa4b1d24970b429092d403ccc7a',
         },
@@ -68,7 +68,7 @@ const myProjects = [
         links: {
             front: 'https://github.com/AlinaSyniavska/job-list-aleannlab',
             back: '',
-            image: 'src/media/job-list.png',
+            image: 'job-list.png',
             website: '',
             video: '',
         },
@@ -89,7 +89,7 @@ const myProjects = [
         links: {
             front: 'https://github.com/AlinaSyniavska/simple-note-app',
             back: '',
-            image: 'src/media/note-app.png',
+            image: 'note-app.png',
             website: 'https://simple-note-application.netlify.app',
             video: '',
         },

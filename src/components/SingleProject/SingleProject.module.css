@@ -1,0 +1,24 @@
+.singleProjectContainer {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 700px;
+    border-bottom: 3px solid rgb(107, 153, 153);
+
+    display: flex;
+    column-gap: 40px;
+}
+
+.singleProjectImg {
+    width: 200px;
+    height: 160px;
+}
+
+.singleProjectImg > img {
+    width: inherit;
+    height: inherit;
+}
+
+.singleProjectInfo {
+
+}
+
