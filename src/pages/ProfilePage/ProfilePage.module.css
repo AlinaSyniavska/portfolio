@@ -13,8 +13,9 @@ body {
     color: #222;
 }
 
-.profile {
+.mainPageContainer {
     width: 1200px;
+    padding: 20px 0;
     position: relative;
 }
 

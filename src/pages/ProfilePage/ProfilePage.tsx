@@ -14,7 +14,7 @@ import {person} from "../../constants";
 const ProfilePage: FC = () => {
     return (
         <div className={style.wrapPage}>
-            <div className={style.profile}>
+            <div className={style.mainPageContainer}>
                 <ProfileName person={person}/>
 
                 <ProfileCommonInfo>
