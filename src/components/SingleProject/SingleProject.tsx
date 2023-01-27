@@ -22,8 +22,8 @@ const SingleProject: FC<IProps> = ({project}) => {
                 </div>
 
                 <div className={style.singleProjectInfo}>
+                    <h2 className={style.singleProjectTitle}>{title}</h2>
                     <StackTechnologies stack={stack}/>
-                    <h2>{title}</h2>
                 </div>
             </div>
         </React.Fragment>
