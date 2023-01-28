@@ -1,6 +1,6 @@
 import {FC} from "react";
 
-import style from './StackTechnology.module.css';
+import style from './StackTechnologies.module.css';
 
 interface IProps {
     stack: string[],

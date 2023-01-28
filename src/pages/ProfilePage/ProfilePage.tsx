@@ -2,6 +2,7 @@ import React, {FC} from "react";
 
 import style from './ProfilePage.module.css';
 import {
+    MoveUpButton,
     ProfileCommonInfo,
     ProfileContact,
     ProfileIntro,
@@ -27,6 +28,7 @@ const ProfilePage: FC = () => {
 
                 <ProfileSkillsInfo person={person}/>
 
+                <MoveUpButton/>
             </div>
         </div>
     );

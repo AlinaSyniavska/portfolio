@@ -1,3 +1,4 @@
+export * from './MoveUpButton/MoveUpButton';
 export * from './ProfileCommonInfo/ProfileCommonInfo';
 export * from './ProfileContact/ProfileContact';
 export * from './ProfileIntro/ProfileIntro';

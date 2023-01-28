@@ -1,7 +1,7 @@
 import {FC} from "react";
 
 import style from "../ProfilePage/ProfilePage.module.css";
-import {Projects, SimpleLink} from "../../components";
+import {MoveUpButton, Projects, SimpleLink} from "../../components";
 
 const PetProjectsPage: FC = () => {
     return (
@@ -12,6 +12,9 @@ const PetProjectsPage: FC = () => {
                 </div>
 
                 <Projects/>
+
+                <MoveUpButton/>
+                <br/>
             </div>
         </div>
     );
