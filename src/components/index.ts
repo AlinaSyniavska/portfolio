@@ -8,6 +8,7 @@ export * from './ProfileSkillsInfo/ProfileSkillsInfo';
 export * from './Projects/Projects';
 export * from './SimpleLink/SimpleLink';
 export * from './SingleProject/SingleProject';
+export * from './SingleProjectDetails/SingleProjectDetails';
 export * from './SkillTitle/SkillTitle';
 export * from './SocialLink/SocialLink';
 export * from './SocialWebLink/SocialWebLink';
