@@ -1,8 +1,17 @@
 .linkContainer {
+    margin-left: 10px;
 }
 
 .linkContainer > a {
+    text-decoration: none;
     color: #222;
+}
+
+.linkContainer > a:before {
+    content: '\21D0';
+    padding-right: 10px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .linkContainer > a:hover {
