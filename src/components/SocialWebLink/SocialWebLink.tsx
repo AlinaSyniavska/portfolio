@@ -12,7 +12,8 @@ interface IProps {
     linkText?: string,
 }
 
-const SocialWebLink: FC<IProps> = ({link, icon, title, linkText= link}) => {
+const SocialWebLink: FC<IProps> = ({link, icon, title, linkText = link}) => {
+
     return (
         <div className={style.link}>
             <i><FontAwesomeIcon icon={icon} title={title}/></i>

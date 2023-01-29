@@ -11,7 +11,7 @@
 
 .singleProject {
     display: flex;
-    column-gap: 20px;
+    column-gap: 40px;
     row-gap: 20px;
     padding-bottom: 40px;
     border-bottom: 2px solid rgb(107, 153, 153);

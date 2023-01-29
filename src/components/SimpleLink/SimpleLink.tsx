@@ -6,12 +6,17 @@ import {Link} from "react-router-dom";
 interface IProps {
     link: string,
     linkText: string,
+    isSelfRoute?: boolean,
 }
 
-const SimpleLink: FC<IProps> = ({link, linkText}) => {
+const SimpleLink: FC<IProps> = ({link, linkText, isSelfRoute = true}) => {
     return (
         <div className={style.linkContainer}>
-            <Link to={link}>{linkText}</Link>
+            {
+                isSelfRoute
+                    ? <Link to={link}>{linkText}</Link>
+                    : <a href={link} target={'_blank'}>{linkText}</a>
+            }
         </div>
     );
 };

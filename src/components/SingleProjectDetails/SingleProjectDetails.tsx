@@ -2,17 +2,11 @@ import React, {FC} from "react";
 import {useLocation} from "react-router-dom";
 import ReactPlayer from 'react-player';
 
-import {
-    faLink
-} from "@fortawesome/free-solid-svg-icons";
-
 import selfStyle from './SingleProjectDetails.module.css';
 import style from '../../pages/ProfilePage/ProfilePage.module.css';
 import {SimpleLink} from "../SimpleLink/SimpleLink";
 import {IProject} from "../../interfaces";
 import {StackTechnologies} from "../StackTechnologies/StackTechnologies";
-import {faTelegram} from "@fortawesome/free-brands-svg-icons";
-import {SocialWebLink} from "../SocialWebLink/SocialWebLink";
 
 interface IProps {
     project: IProps,
@@ -47,6 +41,7 @@ const SingleProjectDetails: FC = () => {
                         </div>
                     </div>
 
+
                     <h2>Source</h2>
                     <div className={selfStyle.singleProjectInfoLinks}>
                         <div>
@@ -61,21 +56,19 @@ const SingleProjectDetails: FC = () => {
                         </div>
                         <div>
                             {
-                                front && <SocialWebLink link={front} icon={faLink} title={'front'}/>
+                                front && <SimpleLink link={front} linkText={'Frontend'} isSelfRoute={false}/>
                             }
                             {
-                                back && <SimpleLink link={back} linkText={'Backend'}/>
+                                back && <SimpleLink link={back} linkText={'Backend'} isSelfRoute={false}/>
                             }
                             {
-                                website && <SimpleLink link={website} linkText={'Website'}/>
+                                website && <SimpleLink link={website} linkText={'Website'} isSelfRoute={false}/>
                             }
                         </div>
                     </div>
 
 
                 </div>
-
-
             </div>
         </div>
     );
