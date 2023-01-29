@@ -1,4 +1,4 @@
-import {FC} from "react";
+import React, {FC} from "react";
 import {useLocation} from "react-router-dom";
 
 import selfStyle from './SingleProjectDetails.module.css';
@@ -24,7 +24,24 @@ const SingleProjectDetails: FC = () => {
                 </div>
 
                 <div className={selfStyle.singleProjectDetailsContainer}>
+                    <h1>{title}</h1>
+                    <div className={selfStyle.singleProject}>
+                        <div className={selfStyle.singleProjectImg}>
+                            <img src={require(`../../media/${image}`)} alt={title}/>
+                        </div>
+                        <div className={selfStyle.singleProjectInfo}>
+                            <div className={selfStyle.singleProjectInfoDescription}>
+                                {description}
+                            </div>
+                            <div className={selfStyle.singleProjectInfoStack}>
+                                {stack}
+                            </div>
+                            <div className={selfStyle.singleProjectInfoLinks}>
+                                {front}
+                            </div>
+                        </div>
 
+                    </div>
                 </div>
 
 
