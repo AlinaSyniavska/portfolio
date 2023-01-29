@@ -2,11 +2,17 @@ import React, {FC} from "react";
 import {useLocation} from "react-router-dom";
 import ReactPlayer from 'react-player';
 
+import {
+    faLink
+} from "@fortawesome/free-solid-svg-icons";
+
 import selfStyle from './SingleProjectDetails.module.css';
 import style from '../../pages/ProfilePage/ProfilePage.module.css';
 import {SimpleLink} from "../SimpleLink/SimpleLink";
 import {IProject} from "../../interfaces";
 import {StackTechnologies} from "../StackTechnologies/StackTechnologies";
+import {faTelegram} from "@fortawesome/free-brands-svg-icons";
+import {SocialWebLink} from "../SocialWebLink/SocialWebLink";
 
 interface IProps {
     project: IProps,
@@ -41,18 +47,28 @@ const SingleProjectDetails: FC = () => {
                         </div>
                     </div>
 
-
+                    <h2>Source</h2>
                     <div className={selfStyle.singleProjectInfoLinks}>
                         <div>
-                            <ReactPlayer
-                                url={video}
-                                width={'600px'}
-                                height={'400px'}
-                                controls={true}
-                            />
+                            {
+                                video && <ReactPlayer
+                                    url={video}
+                                    width={'600px'}
+                                    height={'400px'}
+                                    controls={true}
+                                />
+                            }
                         </div>
                         <div>
-
+                            {
+                                front && <SocialWebLink link={front} icon={faLink} title={'front'}/>
+                            }
+                            {
+                                back && <SimpleLink link={back} linkText={'Backend'}/>
+                            }
+                            {
+                                website && <SimpleLink link={website} linkText={'Website'}/>
+                            }
                         </div>
                     </div>
 

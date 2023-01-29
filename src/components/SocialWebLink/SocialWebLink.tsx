@@ -9,13 +9,14 @@ interface IProps {
     link: string | undefined,
     icon: IconDefinition,
     title: string,
+    linkText?: string,
 }
 
-const SocialWebLink: FC<IProps> = ({link, icon, title}) => {
+const SocialWebLink: FC<IProps> = ({link, icon, title, linkText= link}) => {
     return (
         <div className={style.link}>
             <i><FontAwesomeIcon icon={icon} title={title}/></i>
-            <a href={link} target={'_blank'}>{link}</a>
+            <a href={link} target={'_blank'}>{linkText}</a>
         </div>
     );
 };

@@ -6,12 +6,15 @@
 
 .singleProjectTitle {
     text-align: center;
+    letter-spacing: 0.2rem;
 }
 
 .singleProject {
     display: flex;
     column-gap: 20px;
     row-gap: 20px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgb(107, 153, 153);
 }
 
 .singleProjectImg {
@@ -37,11 +40,16 @@
 .singleProjectInfoStack {
 }
 
+.singleProjectDetailsContainer > h2 {
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    letter-spacing: 0.2rem;
+}
+
 .singleProjectInfoLinks {
-    border-top: 2px solid rgb(107, 153, 153);
-    padding-top: 20px;
     display: flex;
-    column-gap: 20px;
+    column-gap: 40px;
     row-gap: 20px;
     flex-wrap: wrap;
 }
