@@ -14,8 +14,9 @@ body {
 }
 
 .mainPageContainer {
+    box-sizing: border-box;
     width: 1200px;
-    padding: 20px 0;
+    padding: 20px;
     position: relative;
 }
 
@@ -56,5 +57,12 @@ body {
 .linkContainer {
     display: flex;
     column-gap: 50px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .wrapPage {
+        padding: 0 20px;
+    }
 }
 

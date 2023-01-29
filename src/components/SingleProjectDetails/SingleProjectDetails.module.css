@@ -1,30 +1,54 @@
 .singleProjectDetailsContainer {
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
+    row-gap: 20px;
+}
+
+.singleProjectTitle {
+    text-align: center;
 }
 
 .singleProject {
-
+    display: flex;
+    column-gap: 20px;
+    row-gap: 20px;
 }
 
 .singleProjectImg {
+    width: 400px;
+}
 
+.singleProjectImg > img {
+    width: inherit;
 }
 
 .singleProjectInfo {
-
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    font-size: 20px;
 }
 
 .singleProjectInfoDescription {
-
+    text-align: justify;
+    line-height: 32px;
 }
 
 .singleProjectInfoStack {
-
 }
 
 .singleProjectInfoLinks {
+
+}
+
+@media only screen and (max-width: 768px) {
+    .singleProject {
+        flex-direction: column;
+    }
+
+    .singleProjectImg {
+        align-self: center;
+    }
 
 }
 

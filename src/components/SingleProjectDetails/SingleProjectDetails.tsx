@@ -5,6 +5,7 @@ import selfStyle from './SingleProjectDetails.module.css';
 import style from '../../pages/ProfilePage/ProfilePage.module.css';
 import {SimpleLink} from "../SimpleLink/SimpleLink";
 import {IProject} from "../../interfaces";
+import {StackTechnologies} from "../StackTechnologies/StackTechnologies";
 
 interface IProps {
     project: IProps,
@@ -24,7 +25,7 @@ const SingleProjectDetails: FC = () => {
                 </div>
 
                 <div className={selfStyle.singleProjectDetailsContainer}>
-                    <h1>{title}</h1>
+                    <h1 className={selfStyle.singleProjectTitle}>{title}</h1>
                     <div className={selfStyle.singleProject}>
                         <div className={selfStyle.singleProjectImg}>
                             <img src={require(`../../media/${image}`)} alt={title}/>
@@ -34,7 +35,7 @@ const SingleProjectDetails: FC = () => {
                                 {description}
                             </div>
                             <div className={selfStyle.singleProjectInfoStack}>
-                                {stack}
+                                <StackTechnologies stack={stack}/>
                             </div>
                             <div className={selfStyle.singleProjectInfoLinks}>
                                 {front}
