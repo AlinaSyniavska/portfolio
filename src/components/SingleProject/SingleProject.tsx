@@ -16,7 +16,7 @@ const SingleProject: FC<IProps> = ({project}) => {
     return (
         <React.Fragment>
             <div className={style.singleProjectContainer}>
-                <Link to={`${title}`}>
+                <Link to={`${title}`} state={project}>
                     <div className={style.singleProjectImg}>
                         {image &&
                             <img src={require(`../../media/${image}`)} alt={title}/>
@@ -25,7 +25,7 @@ const SingleProject: FC<IProps> = ({project}) => {
                 </Link>
 
                 <div className={style.singleProjectInfo}>
-                    <Link to={`${title}`}>
+                    <Link to={`${title}`} state={project}>
                         <h2 className={style.singleProjectTitle}>{title}</h2>
                     </Link>
                     <StackTechnologies stack={stack}/>
