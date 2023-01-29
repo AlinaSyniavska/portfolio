@@ -38,7 +38,12 @@
 }
 
 .singleProjectInfoLinks {
-
+    border-top: 2px solid rgb(107, 153, 153);
+    padding-top: 20px;
+    display: flex;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 768px) {

@@ -12,7 +12,7 @@ const myProjects = [
             back: 'https://github.com/AlinaSyniavska/makeup-shop',
             image: 'makeup-shop.png',
             website: '',
-            video: 'https://www.loom.com/share/aaeeb59abc644f93ad0b8c813038db7a',
+            video: 'https://youtu.be/SZCnokMwMFU',
         },
     },
     {
@@ -52,7 +52,7 @@ const myProjects = [
             back: '',
             image: 'movies-app.png',
             website: '',
-            video: 'https://www.loom.com/share/64af6aa4b1d24970b429092d403ccc7a',
+            video: 'https://youtu.be/bbkfUBMY1ks',
         },
     },
     {

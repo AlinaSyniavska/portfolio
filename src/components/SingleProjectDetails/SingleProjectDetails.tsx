@@ -1,5 +1,6 @@
 import React, {FC} from "react";
 import {useLocation} from "react-router-dom";
+import ReactPlayer from 'react-player';
 
 import selfStyle from './SingleProjectDetails.module.css';
 import style from '../../pages/ProfilePage/ProfilePage.module.css';
@@ -37,17 +38,26 @@ const SingleProjectDetails: FC = () => {
                             <div className={selfStyle.singleProjectInfoStack}>
                                 <StackTechnologies stack={stack}/>
                             </div>
-                            <div className={selfStyle.singleProjectInfoLinks}>
-                                {front}
-                            </div>
                         </div>
-
                     </div>
+
+
+                    <div className={selfStyle.singleProjectInfoLinks}>
+                        <div>
+                            <ReactPlayer
+                                url={video}
+                                width={'600px'}
+                                height={'400px'}
+                                controls={true}
+                            />
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+
+
                 </div>
-
-
-
-
 
 
             </div>
