@@ -10,7 +10,7 @@ const CustomButton: FC<ButtonProps> = (props) => {
     const { specialProp, ...rest } = props;
 
     return (
-        <div>
+        <div className={style.customBtnContainer}>
             <button className={style.customBtn} {...rest} />
         </div>
     );

@@ -1,3 +1,6 @@
+.customBtnContainer {
+    background: #D2E0E0;
+}
 
 .customBtn {
     --b: 3px;   /* border thickness */
