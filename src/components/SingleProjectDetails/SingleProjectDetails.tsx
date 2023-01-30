@@ -1,12 +1,12 @@
 import React, {FC} from "react";
 import {useLocation} from "react-router-dom";
-import ReactPlayer from 'react-player';
 
 import selfStyle from './SingleProjectDetails.module.css';
 import style from '../../pages/ProfilePage/ProfilePage.module.css';
 import {SimpleLink} from "../SimpleLink/SimpleLink";
 import {IProject} from "../../interfaces";
 import {StackTechnologies} from "../StackTechnologies/StackTechnologies";
+import {VideoPlayer} from "../VideoPlayer/VideoPlayer";
 
 interface IProps {
     project: IProps,
@@ -41,17 +41,11 @@ const SingleProjectDetails: FC = () => {
                         </div>
                     </div>
 
-
                     <h2>Source</h2>
                     <div className={selfStyle.singleProjectInfoLinks}>
                         <div>
                             {
-                                video && <ReactPlayer
-                                    url={video}
-                                    width={'600px'}
-                                    height={'400px'}
-                                    controls={true}
-                                />
+                                video && <VideoPlayer videoUrl={video} width={'600px'} height={'400px'}/>
                             }
                         </div>
                         <div>
@@ -66,7 +60,6 @@ const SingleProjectDetails: FC = () => {
                             }
                         </div>
                     </div>
-
 
                 </div>
             </div>
