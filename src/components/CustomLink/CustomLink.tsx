@@ -1,6 +1,6 @@
 import React, {FC} from "react";
 
-import style from './SimpleLink.module.css';
+import style from './CustomLink.module.css';
 import {Link} from "react-router-dom";
 
 interface IProps {
@@ -9,7 +9,7 @@ interface IProps {
     isSelfRoute?: boolean,
 }
 
-const SimpleLink: FC<IProps> = ({link, linkText, isSelfRoute = true}) => {
+const CustomLink: FC<IProps> = ({link, linkText, isSelfRoute = true}) => {
     return (
         <div className={style.linkContainer}>
             {
@@ -21,4 +21,4 @@ const SimpleLink: FC<IProps> = ({link, linkText, isSelfRoute = true}) => {
     );
 };
 
-export {SimpleLink};
+export {CustomLink};

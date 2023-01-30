@@ -1,7 +1,7 @@
 import {FC, useEffect} from "react";
 
 import style from "../ProfilePage/ProfilePage.module.css";
-import {MoveUpButton, Projects, SimpleLink} from "../../components";
+import {MoveUpButton, Projects, CustomLink} from "../../components";
 import {commonHelper} from "../../helpers";
 
 const PetProjectsPage: FC = () => {
@@ -14,7 +14,7 @@ const PetProjectsPage: FC = () => {
         <div className={style.wrapPage}>
             <div className={style.mainPageContainer}>
                 <div className={style.linkContainer}>
-                    <SimpleLink link={'/'} linkText={'Back to Home'}/>
+                    <CustomLink link={'/'} linkText={'Back to Home'}/>
                 </div>
 
                 <Projects/>

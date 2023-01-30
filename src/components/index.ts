@@ -6,7 +6,7 @@ export * from './ProfileName/ProfileName';
 export * from './ProfilePhoto/ProfilePhoto';
 export * from './ProfileSkillsInfo/ProfileSkillsInfo';
 export * from './Projects/Projects';
-export * from './SimpleLink/SimpleLink';
+export * from './CustomLink/CustomLink';
 export * from './SingleProject/SingleProject';
 export * from './SingleProjectDetails/SingleProjectDetails';
 export * from './SkillTitle/SkillTitle';

@@ -3,7 +3,7 @@ import {useLocation} from "react-router-dom";
 
 import selfStyle from './SingleProjectDetails.module.css';
 import style from '../../pages/ProfilePage/ProfilePage.module.css';
-import {SimpleLink} from "../SimpleLink/SimpleLink";
+import {CustomLink} from "../CustomLink/CustomLink";
 import {IProject} from "../../interfaces";
 import {StackTechnologies} from "../StackTechnologies/StackTechnologies";
 import {VideoPlayer} from "../VideoPlayer/VideoPlayer";
@@ -25,8 +25,8 @@ const SingleProjectDetails: FC = () => {
         <div className={style.wrapPage}>
             <div className={style.mainPageContainer}>
                 <div className={style.linkContainer}>
-                    <SimpleLink link={'/'} linkText={'Back to Home'}/>
-                    <SimpleLink link={'/projects'} linkText={'Back to Projects'}/>
+                    <CustomLink link={'/'} linkText={'Back to Home'}/>
+                    <CustomLink link={'/projects'} linkText={'Back to Projects'}/>
                 </div>
 
                 <div className={selfStyle.singleProjectDetailsContainer}>
@@ -54,13 +54,13 @@ const SingleProjectDetails: FC = () => {
                         </div>
                         <div>
                             {
-                                front && <SimpleLink link={front} linkText={'Frontend'} isSelfRoute={false}/>
+                                front && <CustomLink link={front} linkText={'Frontend'} isSelfRoute={false}/>
                             }
                             {
-                                back && <SimpleLink link={back} linkText={'Backend'} isSelfRoute={false}/>
+                                back && <CustomLink link={back} linkText={'Backend'} isSelfRoute={false}/>
                             }
                             {
-                                website && <SimpleLink link={website} linkText={'Website'} isSelfRoute={false}/>
+                                website && <CustomLink link={website} linkText={'Website'} isSelfRoute={false}/>
                             }
                         </div>
                     </div>
