@@ -37,4 +37,8 @@ a {
     .singleProjectContainer {
         width: 85%;
     }
+
+    .singleProjectTitle {
+        font-size: 20px;
+    }
 }

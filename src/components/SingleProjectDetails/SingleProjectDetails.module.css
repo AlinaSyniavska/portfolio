@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    margin-top: 50px;
 }
 
 .singleProjectTitle {
@@ -58,11 +59,18 @@
     .singleProject {
         flex-direction: column;
     }
-
+    .singleProjectTitle {
+        font-size: 24px;
+    }
     .singleProjectImg {
         align-self: center;
     }
-
+    .singleProjectInfo {
+         font-size: 16px;
+    }
+    .singleProjectInfoDescription {
+        line-height: 28px;
+    }
 }
 
 

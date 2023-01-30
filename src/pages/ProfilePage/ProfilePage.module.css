@@ -5,6 +5,7 @@ body {
 }
 
 .wrapPage {
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
     display: flex;
@@ -63,6 +64,7 @@ body {
 @media only screen and (max-width: 768px) {
     .wrapPage {
         padding: 0 20px;
+        width: 100%;
     }
 
     .mainPageContainer {
