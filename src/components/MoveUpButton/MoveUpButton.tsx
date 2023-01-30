@@ -1,16 +1,10 @@
 import {FC, useEffect} from "react";
 
 import style from './MoveUpButton.module.css';
+import {CustomButton} from "../CustomButton/CustomButton";
+import {commonHelper} from "../../helpers";
 
 const MoveUpButton: FC = () => {
-
-    const moveUp = () => {
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'smooth'
-        });
-    }
 
     useEffect(() => {
         const btn = document.getElementById('moveUpBtn') as HTMLElement;
@@ -23,8 +17,8 @@ const MoveUpButton: FC = () => {
     }, [])
 
     return (
-        <div>
-            <button onClick={moveUp} className={style.moveUpBtn} hidden={true} id={'moveUpBtn'}>Top</button>
+        <div className={style.moveUpBtn}>
+            <CustomButton onClick={commonHelper.moveToPageTop} hidden={true} id={'moveUpBtn'}>Top</CustomButton>
         </div>
     );
 };
