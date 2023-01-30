@@ -33,6 +33,13 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .profileNameContainer {
+        margin-top: 0;
+        padding: 0;
+    }
+}
+
 
 
 

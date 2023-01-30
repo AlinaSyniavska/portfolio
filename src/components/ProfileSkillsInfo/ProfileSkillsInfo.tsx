@@ -66,4 +66,4 @@ const ProfileSkillsInfo: FC<IProps> = ({person}) => {
     );
 };
 
-export {ProfileSkillsInfo};
+export {ProfileSkillsInfo}

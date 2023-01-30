@@ -64,5 +64,23 @@ body {
     .wrapPage {
         padding: 0 20px;
     }
+
+    .mainPageContainer {
+        width: 100%;
+    }
+
+    .profileInfoContainer {
+        padding: 0 20px;
+        row-gap: 50px;
+        width: 50%;
+    }
+
+    .profileTitle {
+        font-size: 20px;
+    }
+
+    .profileText {
+        font-size: 16px;
+    }
 }
 
