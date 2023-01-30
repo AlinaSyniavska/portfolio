@@ -1,9 +1,15 @@
-import {FC} from "react";
+import {FC, useEffect} from "react";
 
 import style from "../ProfilePage/ProfilePage.module.css";
 import {MoveUpButton, Projects, SimpleLink} from "../../components";
+import {commonHelper} from "../../helpers";
 
 const PetProjectsPage: FC = () => {
+
+    useEffect(() => {
+        commonHelper.moveToPageTop();
+    }, [])
+
     return (
         <div className={style.wrapPage}>
             <div className={style.mainPageContainer}>

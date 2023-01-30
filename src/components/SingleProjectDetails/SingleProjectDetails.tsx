@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import React, {FC, useEffect} from "react";
 import {useLocation} from "react-router-dom";
 
 import selfStyle from './SingleProjectDetails.module.css';
@@ -7,15 +7,19 @@ import {SimpleLink} from "../SimpleLink/SimpleLink";
 import {IProject} from "../../interfaces";
 import {StackTechnologies} from "../StackTechnologies/StackTechnologies";
 import {VideoPlayer} from "../VideoPlayer/VideoPlayer";
+import {commonHelper} from "../../helpers";
 
 interface IProps {
     project: IProps,
 }
 
 const SingleProjectDetails: FC = () => {
-
     const {state} = useLocation();
     const {title, description, stack, links: {front, back, image, website, video}} = state as IProject;
+
+    useEffect(() => {
+        commonHelper.moveToPageTop();
+    }, [])
 
     return (
         <div className={style.wrapPage}>
