@@ -19,9 +19,11 @@ const ProfileSkillsInfo: FC<IProps> = ({person}) => {
                 <div className={style.skillContainer}>
                     <div>
                         <SkillTitle title={'pet projects'}/>
-                        <button className={style.btnProjectsLink}>
-                            <Link to={'/projects'} style={{textDecoration: 'none', color: '#222'}}>Go to Projects</Link>
-                        </button>
+                        <Link to={'/projects'} style={{textDecoration: 'none', color: '#222'}}>
+                            <button className={style.btnProjectsLink}>
+                                Go to Projects
+                            </button>
+                        </Link>
                     </div>
 
                     <div>

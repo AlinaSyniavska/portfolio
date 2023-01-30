@@ -1,5 +1,5 @@
 .profileSkillsInfoContainer {
-    padding: 100px 20px 20px 45%;
+    padding: 80px 20px 20px 45%;
 }
 
 .skillContainer {
@@ -40,6 +40,7 @@
     --_p: 0px;
     outline-color: var(--color);
     outline-offset: .05em;
+    cursor: pointer;
 }
 
 .btnProjectsLink:active {

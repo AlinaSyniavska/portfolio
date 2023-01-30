@@ -36,6 +36,7 @@
     --_p: 0px;
     outline-color: var(--color);
     outline-offset: .05em;
+    cursor: pointer;
 }
 
 .moveUpBtn:active {
