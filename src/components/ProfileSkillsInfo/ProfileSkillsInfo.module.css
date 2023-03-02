@@ -1,40 +1,39 @@
 .profileSkillsInfoContainer {
-    padding: 80px 20px 20px 45%;
+  padding: 80px 20px 20px 45%;
 }
 
 .skillContainer {
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
-    font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  font-size: 20px;
 }
 
 .skillUnit {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .skillTitle {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 1024px) {
-    .profileSkillsInfoContainer {
-        padding: 80px 20px 20px 50%;
-    }
+  .profileSkillsInfoContainer {
+    padding: 80px 20px 20px 50%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .profileSkillsInfoContainer {
-        padding: 50px 0 20px;
-    }
-    .skillContainer {
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        font-size: 16px;
-    }
-    .skillContainer > div {
-        width: 40%;
-    }
+  .profileSkillsInfoContainer {
+    padding: 50px 0 20px;
+  }
+  .skillContainer {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 16px;
+  }
+  .skillContainer > div {
+    width: 40%;
+  }
 }
-

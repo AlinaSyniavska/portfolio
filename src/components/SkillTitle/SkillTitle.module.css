@@ -1,25 +1,23 @@
 .skillTitleContainer {
-    display: flex;
-    column-gap: 20px;
-    font-weight: bold;
-    font-size: 24px;
-    letter-spacing: .2rem;
-    margin-bottom: 20px;
+  display: flex;
+  column-gap: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 0.2rem;
+  margin-bottom: 20px;
 }
 
 .skillTitleContainer > i {
-    color: rgb(107, 153, 153);
+  color: rgb(107, 153, 153);
 }
 
 .skillTitle {
-    margin: 0;
-    text-transform: uppercase;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 768px) {
-    .skillTitleContainer {
-        font-size: 20px;
-    }
+  .skillTitleContainer {
+    font-size: 20px;
+  }
 }
-
-

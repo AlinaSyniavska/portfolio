@@ -1,6 +1,5 @@
 export interface IEducation {
-    university: string,
-    specialization: string,
-    years: string,
+  university: string;
+  specialization: string;
+  years: string;
 }
-

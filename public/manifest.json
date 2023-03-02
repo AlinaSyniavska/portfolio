@@ -1,8 +1,7 @@
 {
   "short_name": "Portfolio",
   "name": "Alina Syniavska Portfolio",
-  "icons": [
-  ],
+  "icons": [],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

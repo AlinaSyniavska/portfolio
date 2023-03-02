@@ -1,24 +1,24 @@
 import React from "react";
-import {FC} from "react";
+import { FC } from "react";
 
-import style from './ProfileName.module.css';
-import {IPerson} from "../../interfaces";
+import style from "./ProfileName.module.css";
+import { IPerson } from "../../interfaces";
 
 interface IProps {
-    person: Partial<IPerson>,
+  person: Partial<IPerson>;
 }
 
-const ProfileName: FC<IProps> = ({person}) => {
-    const {personName, personPosition} = person;
+const ProfileName: FC<IProps> = ({ person }) => {
+  const { personName, personPosition } = person;
 
-    return (
-        <React.Fragment>
-            <div className={style.profileNameContainer}>
-                <h1>{personName}</h1>
-                <p>{personPosition}</p>
-            </div>
-        </React.Fragment>
-    );
+  return (
+    <React.Fragment>
+      <div className={style.profileNameContainer}>
+        <h1>{personName}</h1>
+        <p>{personPosition}</p>
+      </div>
+    </React.Fragment>
+  );
 };
 
-export {ProfileName};
+export { ProfileName };

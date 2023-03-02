@@ -1,88 +1,86 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: rgba(107, 153, 153, 30%);
+  margin: 0;
+  padding: 0;
+  background: rgba(107, 153, 153, 30%);
 }
 
 .wrapPage {
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    font-family: 'Lato', sans-serif;
-    color: #222;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  color: #222;
 }
 
 .mainPageContainer {
-    box-sizing: border-box;
-    width: 1200px;
-    padding: 20px;
-    position: relative;
+  box-sizing: border-box;
+  width: 1200px;
+  padding: 20px;
+  position: relative;
 }
 
 .profileInfoContainer {
-    padding: 0 50px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 100px;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
 }
 
 .profileContactContainer {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 
 .profileTitle {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 25px;
 }
 
 .profileText {
-    font-size: 20px;
-    letter-spacing: .1rem;
+  font-size: 20px;
+  letter-spacing: 0.1rem;
 }
 
 .whiteText {
-    color: white;
+  color: white;
 }
 
 .blackText {
-    color: #222;
+  color: #222;
 }
 
 .linkContainer {
-    display: flex;
-    column-gap: 20px;
+  display: flex;
+  column-gap: 20px;
 }
-
 
 @media only screen and (max-width: 768px) {
-    .wrapPage {
-        padding: 0 20px;
-        width: 100%;
-    }
+  .wrapPage {
+    padding: 0 20px;
+    width: 100%;
+  }
 
-    .mainPageContainer {
-        width: 100%;
-    }
+  .mainPageContainer {
+    width: 100%;
+  }
 
-    .profileInfoContainer {
-        padding: 0 20px;
-        row-gap: 50px;
-        width: 50%;
-    }
+  .profileInfoContainer {
+    padding: 0 20px;
+    row-gap: 50px;
+    width: 50%;
+  }
 
-    .profileTitle {
-        font-size: 20px;
-    }
+  .profileTitle {
+    font-size: 20px;
+  }
 
-    .profileText {
-        font-size: 16px;
-    }
+  .profileText {
+    font-size: 16px;
+  }
 }
-

@@ -1,38 +1,37 @@
-import React, {FC} from "react";
+import React, { FC } from "react";
 
-import style from './ProfilePage.module.css';
+import style from "./ProfilePage.module.css";
 import {
-    MoveUpButton,
-    ProfileCommonInfo,
-    ProfileContact,
-    ProfileIntro,
-    ProfileName,
-    ProfilePhoto,
-    ProfileSkillsInfo
+  MoveUpButton,
+  ProfileCommonInfo,
+  ProfileContact,
+  ProfileIntro,
+  ProfileName,
+  ProfilePhoto,
+  ProfileSkillsInfo,
 } from "../../components";
-import {person} from "../../constants";
+import { person } from "../../constants";
 
 const ProfilePage: FC = () => {
-    return (
-        <div className={style.wrapPage}>
-            <div className={style.mainPageContainer}>
-                <ProfileName person={person}/>
+  return (
+    <div className={style.wrapPage}>
+      <div className={style.mainPageContainer}>
+        <ProfileName person={person} />
 
-                <ProfileCommonInfo>
-                    <ProfilePhoto/>
-                    <div className={style.profileInfoContainer}>
-                        <ProfileIntro/>
-                        <ProfileContact person={person}/>
-                    </div>
-                </ProfileCommonInfo>
+        <ProfileCommonInfo>
+          <ProfilePhoto />
+          <div className={style.profileInfoContainer}>
+            <ProfileIntro />
+            <ProfileContact person={person} />
+          </div>
+        </ProfileCommonInfo>
 
-                <ProfileSkillsInfo person={person}/>
+        <ProfileSkillsInfo person={person} />
 
-                <MoveUpButton/>
-            </div>
-        </div>
-    );
+        <MoveUpButton />
+      </div>
+    </div>
+  );
 };
 
-export {ProfilePage};
-
+export { ProfilePage };

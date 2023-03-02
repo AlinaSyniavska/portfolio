@@ -1,76 +1,74 @@
 .singleProjectDetailsContainer {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-top: 50px;
 }
 
 .singleProjectTitle {
-    text-align: center;
-    letter-spacing: 0.2rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
 }
 
 .singleProject {
-    display: flex;
-    column-gap: 40px;
-    row-gap: 20px;
-    padding-bottom: 40px;
-    border-bottom: 2px solid rgb(107, 153, 153);
+  display: flex;
+  column-gap: 40px;
+  row-gap: 20px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid rgb(107, 153, 153);
 }
 
 .singleProjectImg {
-    width: 400px;
+  width: 400px;
 }
 
 .singleProjectImg > img {
-    width: inherit;
+  width: inherit;
 }
 
 .singleProjectInfo {
-    display: flex;
-    flex-direction: column;
-    row-gap: 40px;
-    font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  font-size: 20px;
 }
 
 .singleProjectInfoDescription {
-    text-align: justify;
-    line-height: 32px;
+  text-align: justify;
+  line-height: 32px;
 }
 
 .singleProjectInfoStack {
 }
 
 .singleProjectDetailsContainer > h2 {
-    text-align: center;
-    margin: 0;
-    padding: 20px 0;
-    letter-spacing: 0.2rem;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  letter-spacing: 0.2rem;
 }
 
 .singleProjectInfoLinks {
-    display: flex;
-    column-gap: 40px;
-    row-gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  column-gap: 40px;
+  row-gap: 20px;
+  flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 768px) {
-    .singleProject {
-        flex-direction: column;
-    }
-    .singleProjectTitle {
-        font-size: 24px;
-    }
-    .singleProjectImg {
-        align-self: center;
-    }
-    .singleProjectInfo {
-         font-size: 16px;
-    }
-    .singleProjectInfoDescription {
-        line-height: 28px;
-    }
+  .singleProject {
+    flex-direction: column;
+  }
+  .singleProjectTitle {
+    font-size: 24px;
+  }
+  .singleProjectImg {
+    align-self: center;
+  }
+  .singleProjectInfo {
+    font-size: 16px;
+  }
+  .singleProjectInfoDescription {
+    line-height: 28px;
+  }
 }
-
-

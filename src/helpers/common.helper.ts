@@ -1,16 +1,11 @@
 const commonHelper = {
-    moveToPageTop: (): void => {
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'smooth'
-        });
-    },
+  moveToPageTop: (): void => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  },
+};
 
-}
-
-export {commonHelper}
-
-
-
-
+export { commonHelper };

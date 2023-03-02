@@ -1,3 +1,2 @@
-export * from './PetProjectsPage/PetProjectsPage';
-export * from './ProfilePage/ProfilePage';
-
+export * from "./PetProjectsPage/PetProjectsPage";
+export * from "./ProfilePage/ProfilePage";
